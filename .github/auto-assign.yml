@@ -1,0 +1,31 @@
+# Auto Assign Configuration
+
+# Set to true to add reviewers to PRs
+addReviewers: true
+
+# Set to true to add assignees to PRs
+addAssignees: false
+
+# A list of reviewers to be added to PRs (GitHub user name)
+reviewers:
+  - technical-lead
+  - security-reviewer
+  - code-quality-reviewer
+
+# A number of reviewers added to the PR
+# Set 0 to add all the reviewers
+numberOfReviewers: 2
+
+# A list of assignees, overrides reviewers if set
+assignees:
+  - technical-lead
+
+# A number of assignees to add to the PRs
+# Set to 0 to add all of the assignees.
+# Uses numberOfReviewers if unset.
+numberOfAssignees: 0
+
+# A list of keywords to be skipped if PR's title contains it
+skipKeywords:
+  - wip
+  - draft
